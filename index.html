@@ -346,7 +346,10 @@
                             <table class="table table-sm">
                                 <tr>
                                     <td width="75%">
-                                        <label for="txtInsurance">Insurance copays and deductibles</label>
+                                        <a data-toggle="modal" href="#modalInsuranceCopay">
+                                            <label for="txtInsurance">Insurance copays and deductibles</label> 
+                                            <i class="fa fa-question-circle xero-blue"></i>
+                                        </a>
                                     </td>
                                     <td>
                                         <input type="number" min="0" step="100.00" max="5000" class="form-control TextBoxesGroupHCSA" id="txtInsurance" placeholder="$0.00">
@@ -691,6 +694,39 @@
             </div>
         </div>
     </div>
+                                              
+                                              
+       <!-- Modal - Insurance CoPay -->
+    <div class="modal fade" tabindex="-1" id="modalInsuranceCopay" role="dialog" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header h4" style="margin-bottom: 0px; padding: 1rem; color: #461bcc; background-color: #ece6f8;">
+                    <i class="fa fa-bicycle"></i> &nbsp; Eligible Lifestyle Expenses
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                </div>
+                <!-- Tab content -->
+                <div class="modal-body" style="padding: 0px;">
+
+                    <!-- Content for the popup goes here -->
+                    A copayment or copay is a fixed amount for a covered service, paid by a patient to the provider of 
+                    service before receiving the service. In the United States, copayment is a payment defined in an 
+                    insurance policy and paid by an insured person each time a medical service is accessed.
+                                                             
+
+                </div>
+
+                <div class="modal-footer" style="border-top: 0px !important;">
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>                                              
 
     <!-- ************************* -->
 
