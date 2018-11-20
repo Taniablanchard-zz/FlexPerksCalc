@@ -348,7 +348,10 @@
                             <table class="table table-sm">
                                 <tr>
                                     <td width="75%">
-                                        <label for="txtInsurance">Insurance copays and deductibles</label>
+                                        <a data-toggle="modal" data-target="#modalInsuranceCopay">
+                                            <label for="txtInsurance">Insurance copays and deductibles</label>
+                                            <i class="fa fa-question-circle"></i>
+                                        </a>
                                     </td>
                                     <td>
                                         <input type="number" min="0" step="100.00" max="5000" class="form-control TextBoxesGroupHCSA" id="txtInsurance" placeholder="$0.00">
@@ -693,6 +696,37 @@
             </div>
         </div>
     </div>
+                                              
+                                              
+
+    <!-- Modal - Lifestyle -->
+    <div class="modal fade" tabindex="-1" id="modalInsuranceCopay" role="dialog" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content panel-info">
+                <div class="modal-header panel-heading h4" style="margin-bottom: 0px; padding: 1rem; color: #461bcc; background-color: #ece6f8;">
+                    <i class="fa fa-bicycle"></i> &nbsp; What is Insurance Copay?
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                </div>
+                <!-- Tab content -->
+                <div class="modal-body" style="padding: 0px;">
+
+                    <!-- Definition goes here -->
+                    Definition goes here                              
+
+                </div>
+
+                <div class="modal-footer" style="border-top: 0px !important;">
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>                                              
 
     <!-- ************************* -->
 
